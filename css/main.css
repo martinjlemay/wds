@@ -7,17 +7,22 @@
 
 
 body {
-	width: 860px;
+	max-width: 960px;
 	text-align: left;
-	margin: 0 auto;
 	font-size: 1em;
 	background-image: url("../images/backimgdtd.png");
 	background-attachment: scroll;
 	background-color: #9effff;
 	background-repeat: repeat-x;
-	
-	
+	margin: 36px auto;
 }
+#main {
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+	border: 1px  solid #000;
+}
+
 #hometitle {
 	text-align: center;
 }
@@ -29,16 +34,16 @@ nav a:link {
 	color: #9effff;
 }
 a:visited {
-	color: purple;
+	color: #cc0597;
 }
 a:hover {
-	color: yellow;
+	color: #ffdb20;
 }
 a:active {
-	color: blue;
+	color: #2cabe2;
 }
 nav ul li {
-	display: inline;
+	list-style: none;
 	border: 1px solid #000;
 	border-top-right-radius: 1em;
 	border-bottom-left-radius: 1em;
@@ -46,7 +51,7 @@ nav ul li {
 	box-shadow: 4px 4px 4px #000;
 	margin-right: 5px;
 	padding: 4px 4px;
-	width: 100px;
+	width: 12.7907%; /*-------Equal to 100px-------*/
 	background-color: #9effff;
 	text-align: center;
 	font-weight: bold;
@@ -74,7 +79,7 @@ h2, h3 {
 }	
 article {
 	border: 1px solid #000;
-	padding: 10px;
+	padding: 1.27907% ; /*--------Equal to10px---------*/
 	margin: 15px auto;
 	background-color: #ffdb20;
 	box-shadow: 4px 4px 4px #000;
@@ -84,10 +89,10 @@ article {
 
 aside {
 	border: 1px solid #000;
-	width: 400px;
+	width: 46.51163%; /*------------Equal to 400px ------------*/
 	border-top-right-radius: 4em;
 	border-bottom-left-radius: 4em;
-	padding: 10px;
+	padding: 4.73934%; /*--------Equal to10px---------*/
 	background-color: rgba(204, 5, 151, 0.75);
 	box-shadow: 4px 4px 4px #000; 
 	text-align: left;
@@ -97,7 +102,7 @@ aside {
 }
 #services {
 	border: 1px solid #000;
-	width: 300px;
+	width: 37.44186%; /*------Equal to 300px------*/
 	border-top-right-radius: 4em;
 	border-bottom-left-radius: 4em;
 	padding: 10px;
@@ -113,22 +118,26 @@ aside {
 	border-top-right-radius: 4em;
 	border-bottom-left-radius: 4em;
 	box-shadow: 4px 4px 4px #000; 
+	margin: 15px auto;
 	float: left;
 	background-color: rgba(204, 5, 151, 0.75);
-	margin: 15px auto;
 }
 #gallery ul  {
 	list-style: none;
-	margin-left: 10px;
+	margin: auto;
 	overflow: hidden;
 	padding: 40px;
 }
 #gallery ul li {
 	float:left;
+	margin: auto;
+}
+#pictures {
+margin: auto;
 }
 #contact {
 	border: 1px solid #000;
-	width: 200px;
+	width: 23.125%; /*--------Equal to 200px----------*/
 	border-top-right-radius: 4em;
 	border-bottom-left-radius: 4em;
 	padding: 10px;
