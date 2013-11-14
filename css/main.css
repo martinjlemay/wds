@@ -14,13 +14,11 @@ body {
 	background-attachment: scroll;
 	background-color: #9effff;
 	background-repeat: repeat-x;
-	margin: 36px auto;
+	margin: 7.5% auto;
 }
 #main {
 	width: 100%;
 	margin: auto;
-	overflow: hidden;
-	border: 1px  solid #000;
 }
 
 #hometitle {
@@ -28,7 +26,13 @@ body {
 }
 #logo {
 	clear: left;
-}
+	width: 22.395833%; /*---------215px-----------*/
+}	
+#logo img {
+height: auto;
+max-width: 100%;
+
+}	
 nav a:link {
 	text-decoration: none;
 	color: #9effff;
@@ -50,7 +54,7 @@ nav ul li {
 	float: right;
 	box-shadow: 4px 4px 4px #000;
 	margin-right: 5px;
-	padding: 4px 4px;
+	padding: .41666667%; /*---------4px--------*/
 	width: 12.7907%; /*-------Equal to 100px-------*/
 	background-color: #9effff;
 	text-align: center;
@@ -79,17 +83,16 @@ h2, h3 {
 }	
 article {
 	border: 1px solid #000;
-	padding: 1.27907% ; /*--------Equal to10px---------*/
+	padding: 1.041666% ; /*--------Equal to10px---------*/
 	margin: 15px auto;
 	background-color: #ffdb20;
 	box-shadow: 4px 4px 4px #000;
 	opacity: .75;
 	clear: both;
 }
-
 aside {
 	border: 1px solid #000;
-	width: 46.51163%; /*------------Equal to 400px ------------*/
+	width: 40%; /*------------Equal to 400px ------------*/
 	border-top-right-radius: 4em;
 	border-bottom-left-radius: 4em;
 	padding: 4.73934%; /*--------Equal to10px---------*/
@@ -105,7 +108,7 @@ aside {
 	width: 37.44186%; /*------Equal to 300px------*/
 	border-top-right-radius: 4em;
 	border-bottom-left-radius: 4em;
-	padding: 10px;
+	padding: 1.041666%; /*--------10px;--------*/
 	background-color: rgba(204, 5, 151, 0.75);
 	box-shadow: 4px 4px 4px #000; 
 	text-align: left;
@@ -115,6 +118,7 @@ aside {
 }
 #gallery {
 	border: 1px solid #000;
+	width: 95%;
 	border-top-right-radius: 4em;
 	border-bottom-left-radius: 4em;
 	box-shadow: 4px 4px 4px #000; 
@@ -124,23 +128,19 @@ aside {
 }
 #gallery ul  {
 	list-style: none;
-	margin: auto;
 	overflow: hidden;
-	padding: 40px;
+	padding: 0% 8.3333333%; /*--------40px--------*/
 }
 #gallery ul li {
 	float:left;
-	margin: auto;
 }
-#pictures {
-margin: auto;
-}
+
 #contact {
 	border: 1px solid #000;
 	width: 23.125%; /*--------Equal to 200px----------*/
 	border-top-right-radius: 4em;
 	border-bottom-left-radius: 4em;
-	padding: 10px;
+	padding: 1.041666%; /*----------10px-----------*/
 	background-color: rgba(204, 5, 151, 0.75);
 	box-shadow: 4px 4px 4px #000; 
 	color: #fff;
