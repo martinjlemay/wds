@@ -31,11 +31,12 @@ body {
 #logo img {
 height: auto;
 max-width: 100%;
+display: block;
 
 }	
 nav a:link {
 	text-decoration: none;
-	color: #9effff;
+	color: #000;
 }
 a:visited {
 	color: #cc0597;
@@ -82,20 +83,22 @@ h2, h3 {
     text-align: center;
 }	
 article {
+	width: 50%;
 	border: 1px solid #000;
-	padding: 1.041666% ; /*--------Equal to10px---------*/
+	padding: 0% 1.041666% ; /*--------Equal to10px---------*/
 	margin: 15px auto;
 	background-color: #ffdb20;
 	box-shadow: 4px 4px 4px #000;
 	opacity: .75;
 	clear: both;
+	-moz-column-count: 3;
 }
 aside {
 	border: 1px solid #000;
 	width: 40%; /*------------Equal to 400px ------------*/
 	border-top-right-radius: 4em;
 	border-bottom-left-radius: 4em;
-	padding: 4.73934%; /*--------Equal to10px---------*/
+	padding: 0% 4.73934%; /*--------Equal to10px---------*/
 	background-color: rgba(204, 5, 151, 0.75);
 	box-shadow: 4px 4px 4px #000; 
 	text-align: left;
@@ -108,17 +111,16 @@ aside {
 	width: 37.44186%; /*------Equal to 300px------*/
 	border-top-right-radius: 4em;
 	border-bottom-left-radius: 4em;
-	padding: 1.041666%; /*--------10px;--------*/
+	padding: 0% 1.041666%; /*--------10px;--------*/
 	background-color: rgba(204, 5, 151, 0.75);
 	box-shadow: 4px 4px 4px #000; 
-	text-align: left;
 	color: #fff;
 	margin: 15px auto;
 	opacity: .85;
 }
 #gallery {
 	border: 1px solid #000;
-	width: 95%;
+	width: 95.208333%;
 	border-top-right-radius: 4em;
 	border-bottom-left-radius: 4em;
 	box-shadow: 4px 4px 4px #000; 
@@ -127,20 +129,29 @@ aside {
 	background-color: rgba(204, 5, 151, 0.75);
 }
 #gallery ul  {
+	width: 100%;
 	list-style: none;
 	overflow: hidden;
-	padding: 0% 8.3333333%; /*--------40px--------*/
+	padding-left: 8.8815789%; /*------81px-------*/
+	margin: 0 auto;
 }
-#gallery ul li {
+#gallery li {
+	display: inline;
 	float:left;
+	width: 27.412281%;
 }
-
+#gallery img {
+	width: 100%;
+	height: auto;
+	border-radius: 5px;
+	-moz-border-radius: 10px;
+}
 #contact {
 	border: 1px solid #000;
 	width: 23.125%; /*--------Equal to 200px----------*/
 	border-top-right-radius: 4em;
 	border-bottom-left-radius: 4em;
-	padding: 1.041666%; /*----------10px-----------*/
+	padding: 0% 1.041666%; /*----------10px-----------*/
 	background-color: rgba(204, 5, 151, 0.75);
 	box-shadow: 4px 4px 4px #000; 
 	color: #fff;
@@ -151,4 +162,67 @@ aside {
 }
 footer {
 	text-align: center;
+}
+/* = Media Queries=====================*/
+
+/*Tablet Portrait Size to standard 960*/
+@media screen and (min-width: 768px) and (max-width:959px) {
+h1 {
+	font-size: 4em;
+}
+h2 { 
+	font-size: 3em;
+}
+#contact {
+	width: 27%;
+}
+}
+
+/* Mobile Landscape Size to Tablet Portrait */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+h1 {
+	font-size: 3em;
+}
+h2 { 
+	font-size: 2em;
+}
+nav ul li {
+	width: 20%; 
+}
+article {
+	width: 80%;
+}
+#services {
+	width: 60%; 
+}
+#contact {
+	width: 55%;
+}
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size */
+@media only screen and (max-width: 479px) {
+h1 {
+	color: #000;
+	font-size: 2em;
+}
+h2 { 
+	font-size: 1.5em;
+}
+nav ul li {
+	width: 20%; 
+}
+aside {
+	width: 60%;
+}
+article {
+	width: 80%;
+	-moz-column-count: 1;
+}
+#services {
+	width: 60%; 
+}
+#contact {
+	width: 80%; 
+}	
 }
