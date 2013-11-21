@@ -43,6 +43,7 @@ a:visited {
 }
 a:hover {
 	color: #ffdb20;
+	background: red;
 }
 a:active {
 	color: #2cabe2;
@@ -67,7 +68,6 @@ h1 {
 	font-size: 5em;
 	text-shadow: 4px 4px 4px #000;
 	opacity: 0.75;
-	
 }
 h2 {
 	font-size: 2.25em;
@@ -118,6 +118,22 @@ aside {
 	margin: 15px auto;
 	opacity: .85;
 }
+
+table {
+	background: #cc0597;
+	border-collapse: collapse;
+	margin: 15px auto;	
+	border : 1px solid #000;
+	opacity: .75;
+}
+th{
+	background: #ffdb20;
+}
+td {
+	border : 1px solid #000;
+	padding: 5px;
+	color: #fff;
+}
 #gallery {
 	border: 1px solid #000;
 	width: 95.208333%;
@@ -132,19 +148,20 @@ aside {
 	width: 100%;
 	list-style: none;
 	overflow: hidden;
-	padding-left: 8.8815789%; /*------81px-------*/
 	margin: 0 auto;
 }
 #gallery li {
 	display: inline;
 	float:left;
 	width: 27.412281%;
+	margin: 0 auto;
 }
 #gallery img {
 	width: 100%;
 	height: auto;
 	border-radius: 5px;
 	-moz-border-radius: 10px;
+	margin: 0 auto;
 }
 #contact {
 	border: 1px solid #000;
@@ -209,12 +226,14 @@ h1 {
 	color: #000;
 	font-size: 2.5em;
 	clear: right;
+	padding: 10px 0px 0px 0px;
 }
 h2 { 
 	font-size: 1.5em;
 }
 h1, h2, h3 {
-	text-shadow: none
+	text-shadow: none;
+	color: #000;
 }
 nav ul li {
 	width: 22%; 
@@ -228,6 +247,23 @@ aside {
 article {
 	width: 80%;
 	-moz-column-count: 1;
+}
+#gallery li {
+	display: block;
+	float:left;
+	width: 27.412281%;
+}
+#gallery ul  {
+	display: hidden;
+	margin: 0 auto;
+	float: left;
+}
+#gallery li {
+	display: inline;
+}
+#gallery img {
+	width: 150px;
+	height: auto;
 }
 #services {
 	width: 60%; 
