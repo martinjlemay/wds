@@ -60,7 +60,7 @@
 				</ul>
 			</section>
 				<h2> Pricing List</h2>
-			<table summary="Price list of services">
+			<table>
 				<tr>
 					<th>Services</th>
 					<th>Monday-Friday</th>
@@ -131,8 +131,6 @@
 		 			<h4>If you like, we can contact you.</h4>
 		 			<fieldset>
 		 				<legend>Contact Information</legend>
-		 			
-		 			
 		 			<div>
 		 				<label for= "name_first" >First Name</label>
 		 				<input type= "text" name= "name_first" id= "name_first"/>
@@ -154,13 +152,29 @@
 		 				<input type= "text" name= "address" id= "address"/>
 		 			</div>
 		 			<div>
-		 				<label for= "city">City</label>
+		 				<label for= "city">City or Town</label>
 		 				<input type= "text" name= "city" id= "city"/>
+		 			</div>
+		 			<div>
+		 				<label for= "state">State of Your Property</label>
+		 				<input type= "text" name= "state" id= "state"/>
 		 			</div>
 		 			<div>
 		 				<label for= "zip">Zip Code</label>
 		 				<input type= "text" name= "zip" id= "zip"/>
 		 			</div>
+		 			<div> 
+		 				<label for="reason">Why would you like us to contact you?</label>
+		 				<select name= "reason" id= "reason">
+		 					<option>Commercial Services</option>
+		 					<option>Home Services</option>
+		 					<option>Employment Opportunities</option>
+		 					<option>General Inquiry</option>
+		 					<option>Carpet and Upholstery Cleaning</option>
+		 					<option>Stripping and Waxing</option>
+		 				</select>
+		 			</div>	
+		 				<input type= "submit"/>	
 		 			</fieldset>
 		 		</form>
 				</div>
