@@ -75,6 +75,12 @@ h2 {
 h3 {
 	font-size: 1.75em;
 }
+h4 {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 1.2em;
+	text-shadow: none;
+	color: #ffdb20;
+}
 h2, h3 {
 	font-family: 'Yanone Kaffeesatz', sans-serif;
 	text-shadow: 2px 2px 2px #000, -2px -2px 0px #000;
@@ -252,6 +258,7 @@ article {
 	display: block;
 	float:left;
 	width: 27.412281%;
+	margin: 0 auto;
 }
 #gallery ul  {
 	display: hidden;
@@ -270,5 +277,11 @@ article {
 }
 #contact {
 	width: 80%; 
-}	
+}
+#contact_form {
+	font: arial 1em #000;
+}
+input:focus {
+	background: red;
+}
 }
